@@ -11,6 +11,7 @@
     "node": ">=10"
   },
   "scripts": {
+    "deploy": "grunt build && git-directory-deploy --directory www --branch master",
     "serve": "grunt serve",
     "test": "grunt test"
   },
@@ -21,6 +22,7 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "git-directory-deploy": "^1.5.1",
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-connect": "^2.0.0",
