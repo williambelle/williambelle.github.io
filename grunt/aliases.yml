@@ -1,2 +1,15 @@
 test:
   - 'eslint'
+
+build:
+  - 'clean'
+  - 'test'
+  - 'copy'
+
+serve:
+  - 'build'
+  - 'connect:build'
+  - 'watch'
+
+default:
+  - 'serve'
