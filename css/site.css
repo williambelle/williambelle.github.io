@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Jura', sans-serif;
+  font-size: 1rem;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  flex: 1 0 auto;
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 92%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    width: 1024px;
+  }
+}
+
+a {
+  color: #0395de;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+a:visitied, a:hover, a:active {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: #0395de;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #0395de;
+  color: white;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile .portrait {
+  position: relative;
+  max-width: 10rem;
+  margin: 0.6em auto;
+}
+
+.profile .portrait .spinner {
+  width: 10rem;
+  height: 10rem;
+  border: 0.5em solid #3d3d3d;
+  border-right-color: #0395de;
+  border-bottom-color: #0395de;
+  border-radius: 50%;
+  -webkit-transition: transform 0.8s ease-in-out;
+  -moz-transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.profile .portrait:hover .spinner {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.profile .portrait .img {
+  position: absolute;
+  width: 100%;
+  top: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  right: 0;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-image: url('https://avatars3.githubusercontent.com/u/2843501');
+}
+
+.profile .name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.0rem;
+  margin: 0.2em auto;
+}
+
+.profile .title {
+  font-size: 1.0rem;
+  color: #0395de;
+  margin: 0.8em auto;
+}
+
+.profile .bio {
+  font-size: 0.9rem;
+}
+
+.profile .bio p {
+  margin-top: 0.9em;
+}
+
+.profile .bio a:hover {
+  color: initial;
+}
+
+@media only screen and (min-width: 720px) {
+  .profile .portrait {
+    max-width: 11rem;
+  }
+
+  .profile .portrait .spinner {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .profile .name {
+    font-size: 2.4rem;
+  }
+
+  .profile .title {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .profile .portrait {
+    max-width: 12rem;
+  }
+
+  .profile .portrait .spinner {
+    width: 12rem;
+    height: 12rem;
+  }
