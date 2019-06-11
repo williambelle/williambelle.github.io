@@ -17,7 +17,7 @@ body {
 .wrap {
   flex: 1 0 auto;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 3em;
   width: 92%;
 }
 
@@ -46,6 +46,36 @@ a:visitied, a:hover, a:active {
 ::-moz-selection {
   background-color: #0395de;
   color: white;
+}
+
+.footer {
+  flex-shrink: 0;
+  width: 92%;
+  height: 80px;
+  box-sizing: border-box;
+  color: #4f515d;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    width: 1024px;
+  }
+}
+
+.footer p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.footer a:hover {
+  color: #4f515d;
 }
 
 .profile {
@@ -146,3 +176,83 @@ a:visitied, a:hover, a:active {
     width: 12rem;
     height: 12rem;
   }
+
+  .profile .name {
+    font-size: 2.5rem;
+  }
+
+  .profile .title {
+    font-size: 1.2rem;
+  }
+}
+
+.contacts {
+  margin: 2.2rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contacts .contact {
+  display: inline-block;
+  width: 2.2em;
+  height: 2.2em;
+  line-height: 2.2em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  background: #f9f9fb;
+  border-radius: 100%;
+  color: #535358;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contacts .contact:hover {
+  background: #0395de;
+  color: #fff;
+  box-shadow: 0 0 1px 7px rgba(182, 38, 44, 0.15);
+}
+
+.actions {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.actions .action {
+  position: relative;
+  display: inline-block;
+  margin: 1.2em 1.2em;
+  width: 15em;
+  height: 2em;
+  line-height: 2em;
+  font-weight: 700;
+  color: #000;
+}
+
+.actions .action:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.actions .action:after {
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  bottom: -0.3em;
+  background: #0395de;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.actions .action:hover:after {
+  width: 0;
+}
+
+.actions .action:hover {
+  color: #666;
+}
