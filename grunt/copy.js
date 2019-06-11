@@ -5,7 +5,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'src/',
-      src: ['css/**', 'index.html'],
+      src: ['icons/**', 'css/**', 'index.html'],
       dest: 'www/',
       nonull: true
     }]
