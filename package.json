@@ -28,8 +28,8 @@
     "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-eslint": "^21.0.0",
-    "load-grunt-config": "^1.0.2"
+    "grunt-eslint": "^21.1.0",
+    "load-grunt-config": "^2.0.0"
   },
   "dependencies": {}
 }
