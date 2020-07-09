@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/williambelle/williambelle.github.io.git",
+  "repository": "williambelle/williambelle.github.io",
   "engines": {
     "node": ">=10"
   },
