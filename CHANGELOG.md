@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.0.1 / 2020-07-09
+
+  - Update dev dependencies
+  - Test against Node.js 12
+
 ### v1.0.0 / 2019-06-11
 
   - Add bio
